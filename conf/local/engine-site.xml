@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+  <!-- spark submit config -->
+  <property spark='spark settings'>
+    <name>spark-submit</name>
+    <value>/home/AnalysisCore/spark/bin/</value>
+    <description>spark loc</description>
+  </property>
+
+  <property spark='spark settings'>
+    <name>--master</name>
+    <value>yarn</value>
+    <description>set master mode local[*], or yarn </description>
+  </property>
+
+  <property spark='spark settings'>
+    <name>--principal</name>
+    <value>hive</value>
+    <description>well</description>
+  </property>
+
+  <property spark='spark settings'>
+    <name>--keytab</name>
+    <value>/home/discover/bin/hive.keytab</value>
+    <description>well</description>
+  </property>
+
+   <property spark='spark settings'>
+    <name>--queue</name>
+    <value>guoyun</value>
+    <description>well</description>
+  </property>
+
+  <property spark='spark settings'>
+    <name>--conf</name>
+    <value>spark.executorEnv.JAVA_HOME=/usr/java/jdk1.8.0_25</value>
+    <description>well</description>
+  </property>
+
+  <property spark1='spark settings'>
+    <name>--conf</name>
+    <value>javax.jdo.option.ConnectionURL=jdbc:mysql://tdh1:13306/metastore_inceptor1?createDatabaseIfNotExist=true</value>
+    <description>well</description>
+  </property>
+
+
+  <property spark='spark settings'>
+    <name>--conf</name>
+    <value>spark.yarn.appMasterEnv.JAVA_HOME=/usr/java/jdk1.8.0_25</value>
+    <description>well</description>
+  </property>
+
+  <property spark1='spark settings'>
+    <name>--conf</name>
+    <value>javax.jdo.option.ConnectionPassword=775957853</value>
+    <description>well</description>
+  </property>
+
+  <property spark1='spark settings'>
+    <name>--conf</name>
+    <value>javax.jdo.option.ConnectionDriverName=com.mysql.jdbc.Driver</value>
+    <description>well</description>
+  </property>
+
+  <property spark1='spark settings'>
+    <name>--conf</name>
+    <value>javax.jdo.option.ConnectionUserName=root</value>
+    <description>well</description>
+  </property>
+
+  <property spark='spark settings'>
+    <name>--py-files</name>
+    <value>/home/AnalysisCore/lib/pkg.zip</value>
+    <description>dependence package path for python</description>
+  </property>
+ 
+    
+   <!-- yarn config -->
+   <property yarn='yarn settings'>
+    <name>yarn.rest.url</name>
+    <value>http://172.17.120.22:8088/ws/v1/cluster/apps/</value>
+    <description>Restful API for Yarn URL</description>
+  </property>
+
+    <!-- <Script File location path> -->
+
+  <property script='script settings'>
+    <name>scriptFileLocation</name>
+    <value>/home/AnalysisCore/spark_api/script/</value>
+    <description>spark script write in local path</description>
+  </property>
+
+
+</configuration>
