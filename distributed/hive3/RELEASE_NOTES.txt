@@ -1,0 +1,11 @@
+Release Notes - Hive - Version 3.1.1
+
+
+
+** Bug
+    * [HIVE-18778] - Needs to capture input/output entities in explain
+
+
+** New Feature
+    * [HIVE-20420] - Provide a fallback authorizer when no other authorizer is in use
+
