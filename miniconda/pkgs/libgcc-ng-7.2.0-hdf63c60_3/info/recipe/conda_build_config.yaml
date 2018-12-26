@@ -1,0 +1,36 @@
+c_compiler: gcc
+cpu_optimization_target: nocona
+cran_mirror: https://mran.microsoft.com/snapshot/2018-01-01
+ctng_binutils: 2.28.1
+ctng_cpu_arch: x86_64
+ctng_duma: 2.5.15
+ctng_gcc: 7.2.0
+ctng_gdb: 7.12.1
+ctng_gettext: 0.19.7
+ctng_gmp: 6.1.2
+ctng_isl: '0.18'
+ctng_kernel: 2.6.32
+ctng_libc: gnu
+ctng_libiconv: '1.14'
+ctng_mpc: 1.0.3
+ctng_mpfr: 3.1.5
+ctng_nature: shared
+ctng_ncurses: '6.0'
+ctng_sample: x86_64-centos6-linux-gnu
+ctng_target_platform: linux-64
+ctng_vendor: conda_cos6
+cxx_compiler: gxx
+fortran_compiler: gfortran
+gnu: 2.12.2
+ignore_build_only_deps: [python]
+lua: '5'
+numpy: '1.11'
+perl: 5.26.0
+pin_run_as_build:
+  python: {max_pin: x.x, min_pin: x.x}
+  r-base: {max_pin: x.x.x, min_pin: x.x.x}
+python: '3.6'
+r_base: '3.4'
+target_platform: linux-64
+zip_keys:
+- [ctng_target_platform, ctng_cpu_arch]

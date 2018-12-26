@@ -1,0 +1,24 @@
+# This file created by conda-build 3.0.15+589.gdb82945
+# ------------------------------------------------
+
+package:
+    name: libstdcxx-ng
+    version: 7.2.0
+source:
+    path: .
+build:
+    missing_dso_whitelist:
+        - '*'
+    number: 3
+    string: hdf63c60_3
+about:
+    home: https://gcc.gnu.org/
+    license: GPL3 with runtime exception
+    summary: The GNU C++ Runtime Library
+extra:
+    copy_test_source_files: true
+    final: true
+    parent_recipe:
+        name: compilers_linux-64
+        path: /home/rdonnelly/conda/aggregate/ctng-compilers-feedstock/recipe
+        version: 7.2.0

@@ -1,0 +1,20 @@
+{
+  "arch": "x86_64",
+  "build": "h36134e3_1",
+  "build_number": 1,
+  "depends": [],
+  "files": [],
+  "installed_by": "Miniconda3-4.5.4-Linux-x86_64.sh",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "/root/DATAENGINE/miniconda/pkgs/conda-env-2.6.0-h36134e3_1",
+    "type": "hard-link"
+  },
+  "md5": "c1a55e6bb160dd26801df411e7dc1dc4",
+  "name": "conda-env",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1505742067960,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/conda-env-2.6.0-h36134e3_1.tar.bz2",
+  "version": "2.6.0"
+}

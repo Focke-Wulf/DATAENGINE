@@ -1,0 +1,63 @@
+# This file created by conda-build 3.10.2
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/wheel-0.31.1-python_3.6-on-linux_64, last modified Tue May 15 16:33:14 2018
+# ------------------------------------------------
+
+package:
+    name: wheel
+    version: 0.31.1
+source:
+    fn: wheel-0.31.1.tar.gz
+    sha256: 0a2e54558a0628f2145d2fc822137e322412115173e8a2ddbe1c9024338ae83c
+    url: https://pypi.io/packages/source/w/wheel/wheel-0.31.1.tar.gz
+build:
+    entry_points:
+        - wheel = wheel.tool:main
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py36_0
+requirements:
+    host:
+        - ca-certificates 2018.03.07 0
+        - certifi 2018.4.16 py36_0
+        - libedit 3.1.20170329 h6b74fdf_2
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hf484d3e_0
+        - openssl 1.0.2o h20670df_0
+        - python 3.6.5 hc3d631a_2
+        - readline 7.0 ha6073c6_4
+        - setuptools 39.1.0 py36_0
+        - sqlite 3.23.1 he433501_0
+        - tk 8.6.7 hc745277_3
+        - xz 5.2.3 h5e939de_4
+        - zlib 1.2.11 ha838bed_2
+    run:
+        - python >=3.6,<3.7.0a0
+        - setuptools
+test:
+    commands:
+        - wheel --help
+    imports:
+        - wheel
+        - wheel.signatures
+        - wheel.tool
+    requires:
+        - coverage
+        - jsonschema
+        - pytest
+        - pytest-cov
+about:
+    home: https://bitbucket.org/pypa/wheel/
+    license: MIT
+    license_file: LICENSE.txt
+    summary: A built-package format for Python.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - mingwandroid
+        - ocefpaf
+        - pelson

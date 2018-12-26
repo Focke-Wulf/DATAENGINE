@@ -1,0 +1,28 @@
+{
+  "arch": "x86_64",
+  "build": "py36h0a5515d_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng 7.2.0.*",
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "lib/python3.6/site-packages/__pycache__/test_pycosat.cpython-36.pyc",
+    "lib/python3.6/site-packages/pycosat-0.6.3-py3.6.egg-info",
+    "lib/python3.6/site-packages/pycosat.cpython-36m-x86_64-linux-gnu.so",
+    "lib/python3.6/site-packages/test_pycosat.py"
+  ],
+  "installed_by": "Miniconda3-4.5.4-Linux-x86_64.sh",
+  "license": "MIT",
+  "link": {
+    "source": "/root/DATAENGINE/miniconda/pkgs/pycosat-0.6.3-py36h0a5515d_0",
+    "type": "hard-link"
+  },
+  "md5": "25c65a127368d11fb9d6b8ffeee1b050",
+  "name": "pycosat",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1509357342673,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/pycosat-0.6.3-py36h0a5515d_0.tar.bz2",
+  "version": "0.6.3"
+}

@@ -1,0 +1,48 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "cryptography >=2.2.1",
+    "python >=3.6,<3.7.0a0",
+    "six >=1.5.2"
+  ],
+  "files": [
+    "lib/python3.6/site-packages/OpenSSL/SSL.py",
+    "lib/python3.6/site-packages/OpenSSL/__init__.py",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/SSL.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/_util.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/crypto.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/debug.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/rand.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/tsafe.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/version.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/_util.py",
+    "lib/python3.6/site-packages/OpenSSL/crypto.py",
+    "lib/python3.6/site-packages/OpenSSL/debug.py",
+    "lib/python3.6/site-packages/OpenSSL/rand.py",
+    "lib/python3.6/site-packages/OpenSSL/tsafe.py",
+    "lib/python3.6/site-packages/OpenSSL/version.py",
+    "lib/python3.6/site-packages/pyOpenSSL-18.0.0.dist-info/INSTALLER",
+    "lib/python3.6/site-packages/pyOpenSSL-18.0.0.dist-info/LICENSE.txt",
+    "lib/python3.6/site-packages/pyOpenSSL-18.0.0.dist-info/METADATA",
+    "lib/python3.6/site-packages/pyOpenSSL-18.0.0.dist-info/RECORD",
+    "lib/python3.6/site-packages/pyOpenSSL-18.0.0.dist-info/WHEEL",
+    "lib/python3.6/site-packages/pyOpenSSL-18.0.0.dist-info/top_level.txt"
+  ],
+  "installed_by": "Miniconda3-4.5.4-Linux-x86_64.sh",
+  "license": "Apache 2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/root/DATAENGINE/miniconda/pkgs/pyopenssl-18.0.0-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "df336513485c6a8f6d32bee9ef33e31d",
+  "name": "pyopenssl",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1526617732222,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/pyopenssl-18.0.0-py36_0.tar.bz2",
+  "version": "18.0.0"
+}

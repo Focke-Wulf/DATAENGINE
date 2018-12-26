@@ -1,0 +1,84 @@
+# This file created by conda-build 3.0.15+50.g6024f3f
+# meta.yaml template originally from:
+# /home/rdonnelly/conda/aggregate/chardet-feedstock/recipe, last modified Sun Sep 17 15:36:51 2017
+# ------------------------------------------------
+
+package:
+    name: chardet
+    version: 3.0.4
+source:
+    fn: chardet-3.0.4.tar.gz
+    sha256: 84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae
+    url: https://pypi.io/packages/source/c/chardet/chardet-3.0.4.tar.gz
+build:
+    entry_points:
+        - chardetect = chardet.cli.chardetect:main
+    number: '1'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py36h0f667ec_1
+requirements:
+    build:
+        - ca-certificates 2017.08.26 h1d4fec5_0
+        - certifi 2017.7.27.1 py36h8b7b77e_0
+        - libedit 3.1 heed3624_0
+        - libffi 3.2.1 h4deb6c0_3
+        - libgcc-ng 7.2.0 hcbc56d2_1
+        - libstdcxx-ng 7.2.0 h24385c6_1
+        - ncurses 6.0 h06874d7_1
+        - openssl 1.0.2l hd940f6d_1
+        - py 1.4.34 py36h0712aa3_1
+        - pytest 3.2.1 py36h11ad3bb_1
+        - pytest-runner 2.11.1 py36h66b2b85_0
+        - python 3.6.2 ha783207_11
+        - readline 7.0 hac23ff0_3
+        - setuptools 36.2.2 py36hd224944_0
+        - sqlite 3.20.1 h6d8b0f3_1
+        - tk 8.6.7 h5979e9b_1
+        - xz 5.2.3 h2bcbf08_1
+        - zlib 1.2.11 hfbfcf68_1
+    host:
+        - ca-certificates 2017.08.26 h1d4fec5_0
+        - certifi 2017.7.27.1 py36h8b7b77e_0
+        - libedit 3.1 heed3624_0
+        - libffi 3.2.1 h4deb6c0_3
+        - libgcc-ng 7.2.0 hcbc56d2_1
+        - libstdcxx-ng 7.2.0 h24385c6_1
+        - ncurses 6.0 h06874d7_1
+        - openssl 1.0.2l hd940f6d_1
+        - py 1.4.34 py36h0712aa3_1
+        - pytest 3.2.1 py36h11ad3bb_1
+        - pytest-runner 2.11.1 py36h66b2b85_0
+        - python 3.6.2 ha783207_11
+        - readline 7.0 hac23ff0_3
+        - setuptools 36.2.2 py36hd224944_0
+        - sqlite 3.20.1 h6d8b0f3_1
+        - tk 8.6.7 h5979e9b_1
+        - xz 5.2.3 h2bcbf08_1
+        - zlib 1.2.11 hfbfcf68_1
+    run:
+        - python >=3.6,<3.7.0a0
+test:
+    commands:
+        - chardetect --help
+    imports:
+        - chardet
+about:
+    description: 'chardet is a character encoding auto-detector in Python.
+
+        '
+    dev_url: https://github.com/chardet/chardet
+    doc_source_url: https://github.com/chardet/chardet/blob/master/docs/index.rst
+    doc_url: http://chardet.readthedocs.org/
+    home: https://github.com/chardet/chardet
+    license: LGPL2
+    license_family: GPL
+    license_file: LICENSE
+    summary: Universal character encoding detector
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - dan-blanchard
+        - jschueller
+        - nehaljwani
+        - sigmavirus24

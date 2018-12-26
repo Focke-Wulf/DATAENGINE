@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "py36h0f667ec_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "license": "LGPL2",
+  "license_family": "GPL",
+  "name": "chardet",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1505691602341,
+  "version": "3.0.4"
+}

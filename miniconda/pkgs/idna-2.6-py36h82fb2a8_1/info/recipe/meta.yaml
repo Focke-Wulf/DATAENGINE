@@ -1,0 +1,74 @@
+# This file created by conda-build 3.0.15+50.g6024f3f
+# meta.yaml template originally from:
+# /home/rdonnelly/conda/aggregate/idna-feedstock/recipe, last modified Sun Sep 17 15:39:54 2017
+# ------------------------------------------------
+
+package:
+    name: idna
+    version: '2.6'
+source:
+    fn: idna-2.6.tar.gz
+    sha256: 2c6a5de3089009e3da7c5dde64a141dbc8551d5b7f6cf4ed7c2568d0cc520a8f
+    url: https://pypi.io/packages/source/i/idna/idna-2.6.tar.gz
+build:
+    number: '1'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py36h82fb2a8_1
+requirements:
+    build:
+        - ca-certificates 2017.08.26 h1d4fec5_0
+        - certifi 2017.7.27.1 py36h8b7b77e_0
+        - libedit 3.1 heed3624_0
+        - libffi 3.2.1 h4deb6c0_3
+        - libgcc-ng 7.2.0 hcbc56d2_1
+        - libstdcxx-ng 7.2.0 h24385c6_1
+        - ncurses 6.0 h06874d7_1
+        - openssl 1.0.2l hd940f6d_1
+        - python 3.6.2 ha783207_11
+        - readline 7.0 hac23ff0_3
+        - setuptools 36.2.2 py36hd224944_0
+        - sqlite 3.20.1 h6d8b0f3_1
+        - tk 8.6.7 h5979e9b_1
+        - xz 5.2.3 h2bcbf08_1
+        - zlib 1.2.11 hfbfcf68_1
+    host:
+        - ca-certificates 2017.08.26 h1d4fec5_0
+        - certifi 2017.7.27.1 py36h8b7b77e_0
+        - libedit 3.1 heed3624_0
+        - libffi 3.2.1 h4deb6c0_3
+        - libgcc-ng 7.2.0 hcbc56d2_1
+        - libstdcxx-ng 7.2.0 h24385c6_1
+        - ncurses 6.0 h06874d7_1
+        - openssl 1.0.2l hd940f6d_1
+        - python 3.6.2 ha783207_11
+        - readline 7.0 hac23ff0_3
+        - setuptools 36.2.2 py36hd224944_0
+        - sqlite 3.20.1 h6d8b0f3_1
+        - tk 8.6.7 h5979e9b_1
+        - xz 5.2.3 h2bcbf08_1
+        - zlib 1.2.11 hfbfcf68_1
+    run:
+        - python >=3.6,<3.7.0a0
+test:
+    imports:
+        - idna
+about:
+    description: 'A library to support the Internationalised Domain Names in Applications
+
+        (IDNA) protocol as specified in RFC 5891. This version of the protocol
+
+        is often referred to as "IDNA2008".
+
+        '
+    dev_source: https://github.com/kjd/idna
+    home: https://github.com/kjd/idna
+    license: BSD Like
+    license_file: LICENSE.rst
+    summary: Internationalized Domain Names in Applications (IDNA).
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - goanpeca
+        - jschueller
+        - mingwandroid

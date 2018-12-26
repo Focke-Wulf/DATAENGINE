@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "he433501_0",
+  "build_number": 0,
+  "depends": [
+    "libedit",
+    "libgcc-ng >=7.2.0"
+  ],
+  "license": "Public-Domain (http://www.sqlite.org/copyright.html)",
+  "name": "sqlite",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1524193435107,
+  "version": "3.23.1"
+}

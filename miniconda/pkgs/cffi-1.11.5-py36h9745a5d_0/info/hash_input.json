@@ -1,0 +1,4 @@
+{
+  "c_compiler": "gcc",
+  "libffi": "3.2"
+}

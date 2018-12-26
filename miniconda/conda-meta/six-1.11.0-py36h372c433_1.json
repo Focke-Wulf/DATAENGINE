@@ -1,0 +1,30 @@
+{
+  "arch": "x86_64",
+  "build": "py36h372c433_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "lib/python3.6/site-packages/__pycache__/six.cpython-36.pyc",
+    "lib/python3.6/site-packages/six-1.11.0-py3.6.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/six-1.11.0-py3.6.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/six-1.11.0-py3.6.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/six-1.11.0-py3.6.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/six.py"
+  ],
+  "installed_by": "Miniconda3-4.5.4-Linux-x86_64.sh",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/root/DATAENGINE/miniconda/pkgs/six-1.11.0-py36h372c433_1",
+    "type": "hard-link"
+  },
+  "md5": "1912b4563535b2c12b5f80ac514e2e01",
+  "name": "six",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1508610520093,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/six-1.11.0-py36h372c433_1.tar.bz2",
+  "version": "1.11.0"
+}

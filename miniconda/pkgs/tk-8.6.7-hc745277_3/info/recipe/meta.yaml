@@ -1,0 +1,73 @@
+# This file created by conda-build 3.0.28
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/tk-8.6.7-on-linux_64, last modified Wed Nov  8 19:38:02 2017
+# ------------------------------------------------
+
+package:
+    name: tk
+    version: 8.6.7
+source:
+    -   folder: tcl8.6.7
+        sha256: 7c6b8f84e37332423cfe5bae503440d88450da8cc1243496249faa5268026ba5
+        url: https://downloads.sourceforge.net/tcl/tcl8.6.7-src.tar.gz
+    -   folder: tk8.6.7
+        sha256: 061de2a354f9b7c7d04de3984c90c9bc6dd3a1b8377bb45509f1ad8a8d6337aa
+        url: https://downloads.sourceforge.net/tcl/tk8.6.7-src.tar.gz
+build:
+    detect_binary_files_with_prefix: 'true'
+    number: '3'
+    run_exports:
+        - tk >=8.6.7,<8.7.0a0
+    string: hc745277_3
+requirements:
+    build:
+        - binutils_impl_linux-64 2.28.1 h04c84fa_2
+        - binutils_linux-64 7.2.0 hc67e822_9
+        - gcc_impl_linux-64 7.2.0 hc5ce805_2
+        - gcc_linux-64 7.2.0 h60973fd_9
+        - libstdcxx-ng 7.2.0 h7a57d05_2
+        - libx11-common-cos6-x86_64 1.6.4 h023ea50_0
+        - libx11-cos6-x86_64 1.6.4 h64a1553_0
+        - libx11-devel-cos6-x86_64 1.6.4 hb9851ce_0
+        - libxau-cos6-x86_64 1.0.6 h4888106_0
+        - libxcb-cos6-x86_64 1.12 h6fd0490_0
+        - xorg-x11-proto-devel-cos6-x86_64 7.7 h8d4a98b_0
+    run:
+        - libgcc-ng 7.2.0.*
+test:
+    commands:
+        - test -f "${PREFIX}/bin/tclsh"
+        - test -f "${PREFIX}/bin/wish"
+        - test -f "${PREFIX}/bin/tclsh8.6"
+        - test -f "${PREFIX}/bin/wish8.6"
+        - test -f "${PREFIX}/include/tcl.h"
+        - test -f "${PREFIX}/include/tclDecls.h"
+        - test -f "${PREFIX}/include/tclPlatDecls.h"
+        - test -f "${PREFIX}/include/tclPlatDecls.h"
+        - test -f "${PREFIX}/include/tclTomMathDecls.h"
+        - test -f "${PREFIX}/include/tclTomMath.h"
+        - test -f "${PREFIX}/include/tk.h"
+        - test -f "${PREFIX}/include/tkDecls.h"
+        - test -f "${PREFIX}/include/tkPlatDecls.h"
+        - test -f "${PREFIX}/lib/libtcl8.6.so"
+        - test -f "${PREFIX}/lib/libtclstub8.6.a"
+        - test -f "${PREFIX}/lib/libtk8.6.so"
+        - test -f "${PREFIX}/lib/libtkstub8.6.a"
+        - tclsh hello.tcl
+        - tclsh8.6 hello.tcl
+    files:
+        - hello.tcl
+about:
+    home: http://www.tcl.tk/
+    license: Tcl/Tk
+    license_family: BSD
+    summary: A dynamic programming language with GUI support.  Bundles Tcl and Tk.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - mingwandroid
+        - msarahan
+        - pelson
