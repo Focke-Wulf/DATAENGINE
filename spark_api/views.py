@@ -36,7 +36,10 @@ logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 pwd = os.getcwd()
 # father_path=os.path.abspath(os.path.dirname(pwd)+os.path.sep+".")
 # TODO(@junwen) 这里的环境变量最好不要设定成相对路径，希望能直接从系统环境变量里提取文件位置
-conf_path = pwd + '/conf/engine-site.xml'
+conf_path = pwd + '/conf/local/engine-site.xml'
+sub_cmd = ""
+script_conf = ""
+yarn_rest_api = ""
 # -------------------------------------------------------
 try:
     sub_cmd,yarn_rest_api,script_conf = configSettings(conf_path)
