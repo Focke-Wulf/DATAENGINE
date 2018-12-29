@@ -64,15 +64,22 @@ def pars_runer():
             continue
         for logs in logRunerConf[value]:
             log_list = os.listdir('/root/guoyun/{log}'.format(log=logs))
+            
             for i in log_list:
+                print(i)
                 loc = '/root/guoyun/{log}/{file}'.format(log=logs,file=i)
                 row_list = parser_base_log(loc)
+                length = len(row_list[0])
+                row_string = ''
                 for row in row_list:
-                    try:
-                        pg2.insert(value,header_name,header_type,row)
-                    except Exception as e2:
-                        print("Inster_table :",e2)
-                        continue
+                    row_string +=str(row) + ','
+                row_string = row_string[:-1]
+                
+                try:
+                    pg2.insert(value,header_name,header_type,row_string,length)
+                except Exception as e2:
+                    print("Inster_table :",e2)
+                    continue
 
 
 if __name__ == "__main__":

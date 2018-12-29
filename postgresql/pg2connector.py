@@ -28,7 +28,7 @@ class PostgresData:
             self.conn.commit()
             self.conn.close()
 
-    def insert(self,table_name,header_name,header_type,value_list):
+    def insert(self,table_name,header_name,header_type,sql_value,length_value):
         """
         example 
         # hn = ['a','b']
@@ -39,35 +39,38 @@ class PostgresData:
         # 
         # 
         """
+
+    
         string_type_vertification = ['varchar','text','TEXT','character','char','CHARACTER','CHAR','VARCHAR','character varying','CHARACTER VARYING']
 
-        if len(header_name) != len(value_list):
+        if len(header_name) != length_value:
+            
             try:
                 raise(DataBaseException("ERROR : header lenght not equal to value"))
             except DataBaseException as e:
                 print(e.messages)
                 return None    
         else:
+           
             sql = "INSERT INTO "+table_name + " "
             sql_head = "("
-            sql_value = "("
+           
             
-            for i in range(len(value_list)):
+            for i in range(length_value):
                 sql_head =sql_head+ header_name[i] + ","
                 
-                if header_type[i] in string_type_vertification:
-                    sql_value = sql_value + "'"+str(value_list[i])+"'"+ "," 
-                else:        
-                   sql_value = sql_value + str(value_list[i])+ ","    
+                # if header_type[i] in string_type_vertification:
+                #     sql_value = sql_value + "'"+str(value_list[i])+"'"+ "," 
+                # else:        
+                
+                #    sql_value = sql_value + str(value_list[i])+ ","    
             
             sql_head  = sql_head .rstrip(',')
-            sql_value = sql_value.rstrip(',')
+            # sql_value = sql_value.rstrip(',')
             sql_head = sql_head + ")"
-            print(sql_head)
-            sql_value ="VALUES" + sql_value + ")"
-            sql = sql + sql_head +' '+sql_value
-            
+            sql_value ="VALUES " + sql_value + ";"
+            sql = sql + sql_head  +' '+sql_value
             PostgresData.__init__(self)
-            #self.cur.execute(sql)
-            #self.conn.commit()
+            self.cur.execute(sql)
+            self.conn.commit()
             
