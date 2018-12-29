@@ -63,17 +63,17 @@ def pars_runer():
             print("Create_table :",e1)
             continue
         for logs in logRunerConf[value]:
-            log_list = os.listdir('/root/guoyun/{log}'.format(log=logs))
-            
-            for i in log_list:
+            log_list = os.listdir('/root/guoyun/{log}'.format(log=logs))          
+            for i in set(log_list):
                 print(i)
                 loc = '/root/guoyun/{log}/{file}'.format(log=logs,file=i)
                 row_list = parser_base_log(loc)
                 length = len(row_list[0])
-                row_string = ''
-                for row in row_list:
-                    row_string +=str(row) + ','
-                row_string = row_string[:-1]
+                # row_string = ''
+                # for row in row_list:
+                #     row_string +=str(row) + ','
+                # row_string = row_string[:-1]
+                row_string = ','.join((str(row) for row in row_list))
                 
                 try:
                     pg2.insert(value,header_name,header_type,row_string,length)
@@ -82,6 +82,5 @@ def pars_runer():
                     continue
 
 
-if __name__ == "__main__":
-    
+if __name__ == "__main__":    
     pars_runer()
