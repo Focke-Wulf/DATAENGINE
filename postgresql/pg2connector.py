@@ -58,15 +58,8 @@ class PostgresData:
             
             for i in range(length_value):
                 sql_head =sql_head+ header_name[i] + ","
-                
-                # if header_type[i] in string_type_vertification:
-                #     sql_value = sql_value + "'"+str(value_list[i])+"'"+ "," 
-                # else:        
-                
-                #    sql_value = sql_value + str(value_list[i])+ ","    
             
             sql_head  = sql_head .rstrip(',')
-            # sql_value = sql_value.rstrip(',')
             sql_head = sql_head + ")"
             sql_value ="VALUES " + sql_value + ";"
             sql = sql + sql_head  +' '+sql_value

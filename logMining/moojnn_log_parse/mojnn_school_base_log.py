@@ -69,10 +69,6 @@ def pars_runer():
                 loc = '/root/guoyun/{log}/{file}'.format(log=logs,file=i)
                 row_list = parser_base_log(loc)
                 length = len(row_list[0])
-                # row_string = ''
-                # for row in row_list:
-                #     row_string +=str(row) + ','
-                # row_string = row_string[:-1]
                 row_string = ','.join((str(row) for row in row_list))
                 
                 try:
