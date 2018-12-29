@@ -1,6 +1,4 @@
 from __future__ import absolute_import, unicode_literals
-from celery import app
-from celery import shared_task
 import os,django
 import traceback
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DataEngine.settings")# project_name 项目名称
@@ -11,6 +9,8 @@ from logMining.models import Logrecord
 from urllib import parse,request
 from spark_api.parseConf import configSettings
 import logging
+from celery import app
+from celery import shared_task
 
 
 # check file list
@@ -23,3 +23,4 @@ log_file_ = {
 @shared_task
 def log_checker():
     print('a')
+    return 'a'

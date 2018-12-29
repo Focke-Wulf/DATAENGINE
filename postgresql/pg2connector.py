@@ -23,7 +23,6 @@ class PostgresData:
                 sql = sql + sql_
             sql = sql.rstrip(',')
             sql = sql + ");"
-            print(sql)
             self.cur.execute(sql)
             self.conn.commit()
             self.conn.close()

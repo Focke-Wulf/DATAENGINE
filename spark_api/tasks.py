@@ -111,4 +111,5 @@ def get_log_from_spark():
         #     for obj in titleList:
         #         obj.update(appid=str(i))
         Execute.objects.filter(job_id=str(appName)).update(appid=str(i))
-        
+
+
