@@ -2,11 +2,184 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 
 <configuration>
-  <property spark='spark settings'>
-    <name>spark-submit</name>
-    <value>/home/AnalysisCore/spark/bin/</value>
-    <description>spark loc</description>
+  <property>
+    <name>moojnn_school_3</name>
+    <ip_address>121.40.229.164</ip_address>
+    <port>1122</port>
+    <system_user>root</system_user>
+    <log_file_path>/guoyun/apache-tomcat-8.0.24/logs</log_file_path>
+    <filter>localhost_access_log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_4</name>
+    <ip_address>121.40.219.124</ip_address>
+    <port>1122</port>
+    <system_user>root</system_user>
+    <log_file_path>/guoyun/apache-tomcat-8.0.24/logs</log_file_path>
+    <filter>localhost_access_log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_5</name>
+    <ip_address>121.40.237.93</ip_address>
+    <port>1122</port>
+    <system_user>root</system_user>
+    <log_file_path>/guoyun/apache-tomcat-8.0.24/logs</log_file_path>
+    <filter>localhost_access_log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_6</name>
+    <ip_address>121.43.99.178</ip_address>
+    <port>1122</port>
+    <system_user>root</system_user>
+    <log_file_path>/guoyun/apache-tomcat-8.0.24/logs</log_file_path>
+    <filter>localhost_access_log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_3_user</name>
+    <ip_address>121.40.229.164</ip_address>
+    <port>1122</port>
+    <system_user>root</system_user>
+    <log_file_path>/guoyun/apache-tomcat-8.0.24/webapps/logs</log_file_path>
+    <filter>mojing-user.log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_4_user</name>
+    <ip_address>121.40.219.124</ip_address>
+    <port>1122</port>
+    <system_user>root</system_user>
+    <log_file_path>/guoyun/apache-tomcat-8.0.24/webapps/logs</log_file_path>
+    <filter>mojing-user.log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_5_user</name>
+    <ip_address>121.40.237.93</ip_address>
+    <port>1122</port>
+    <system_user>root</system_user>
+    <log_file_path>/guoyun/apache-tomcat-8.0.24/webapps/logs</log_file_path>
+    <filter>mojing-user.log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_6_user</name>
+    <ip_address>121.43.99.178</ip_address>
+    <port>1122</port>
+    <system_user>root</system_user>
+    <log_file_path>/guoyun/apache-tomcat-8.0.24/webapps/logs</log_file_path>
+    <filter>mojing-user.log</filter>
   </property>
 
 
+  <property>
+    <name>mengniu_mojinServer_pro</name>
+    <ip_address>120.26.83.147</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/moojnn/data/logs</log_file_path>
+    <filter>mojing-user.log</filter>
+  </property>
+
+  <property>
+    <name>moojing_server_pro2</name>
+    <ip_address>120.26.221.2</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/moojnn/data/logs</log_file_path>
+    <filter>mojing-user.log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_4</name>
+    <ip_address>120.26.101.233</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs</log_file_path>
+    <filter>localhost_access_log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_4_base</name>
+    <ip_address>120.26.101.233</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs/mojing_csp_log </log_file_path>
+    <filter>base</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_4_dao</name>
+    <ip_address>120.26.101.233</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs/mojing_csp_log </log_file_path>
+    <filter>dao</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_4_communication</name>
+    <ip_address>120.26.101.233</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs/mojing_csp_log </log_file_path>
+    <filter>communication</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_4_task</name>
+    <ip_address>120.26.101.233</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs/mojing_csp_log </log_file_path>
+    <filter>task</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_3</name>
+    <ip_address>120.26.73.36</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs</log_file_path>
+    <filter>localhost_access_log</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_3_base</name>
+    <ip_address>120.26.73.36</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs/mojing_csp_log </log_file_path>
+    <filter>base</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_3_dao</name>
+    <ip_address>120.26.73.36</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs/mojing_csp_log </log_file_path>
+    <filter>dao</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_3_communication</name>
+    <ip_address>120.26.73.36</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs/mojing_csp_log </log_file_path>
+    <filter>communication</filter>
+  </property>
+
+  <property>
+    <name>moojnn_school_csp_pro_3_task</name>
+    <ip_address>120.26.73.36</ip_address>
+    <port>22</port>
+    <system_user>root</system_user>
+    <log_file_path>/data/mojingcsp/logs/mojing_csp_log </log_file_path>
+    <filter>task</filter>
+  </property>
 </configuration>
